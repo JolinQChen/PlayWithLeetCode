@@ -106,7 +106,9 @@ public class _547_Friend_Circles {
     int find(int parent[], int i) {
         if (parent[i] == -1)
             return i;
-        return find(parent, parent[i]);
+        int root = find(parent, parent[i]);
+        parent[i] = root;
+        return parent[i];
     }
 
     void union(int parent[], int x, int y) {
