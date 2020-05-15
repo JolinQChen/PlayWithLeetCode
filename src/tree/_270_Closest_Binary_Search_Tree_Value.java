@@ -1,4 +1,4 @@
-import java.util.*;
+package tree;
 
 /**
  * Given a non-empty binary search tree and a target value,
