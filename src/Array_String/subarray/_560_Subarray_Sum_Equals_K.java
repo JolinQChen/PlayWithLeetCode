@@ -1,4 +1,4 @@
-package com.Array_String.subarray;
+package Array_String.subarray;
 
 import java.util.HashMap;
 import java.util.Map;
