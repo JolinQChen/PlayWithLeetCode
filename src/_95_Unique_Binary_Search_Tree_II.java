@@ -11,12 +11,7 @@ public class _95_Unique_Binary_Search_Tree_II {
     * 这样，我们就有了树根 i 和可能的左子树、右子树的列表。
     * 最后一步，对两个列表循环，将左子树和右子树连接在根上。
     * */
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
+
 
 
     public List<TreeNode> generateTrees(int n) {

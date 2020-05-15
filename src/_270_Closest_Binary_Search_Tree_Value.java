@@ -24,20 +24,7 @@ import java.util.*;
 public class _270_Closest_Binary_Search_Tree_Value {
 
      /** Definition for a binary tree node.*/
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) {
-            this.val = val;
-        }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
+
 
     private int res;
     public int closestValue(TreeNode root, double target) {
