@@ -1,4 +1,4 @@
-package com.Array_String.DFS_BFS_UnionFind_DP;
+package com.Array_String.DFS_BFS_UnionFind_DP_prefixSum;
 
 import java.util.Arrays;
 import java.util.HashSet;
