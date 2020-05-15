@@ -1,5 +1,4 @@
-package com.Array_String.DFS_BFS_DP;
-import sun.awt.image.ImageWatched;
+package com.Array_String.DFS_BFS_UnionFind_DP;
 
 import java.util.*;
 

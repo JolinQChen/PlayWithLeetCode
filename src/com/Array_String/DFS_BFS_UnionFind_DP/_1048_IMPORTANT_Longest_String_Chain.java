@@ -1,4 +1,4 @@
-package com.Array_String.DFS_BFS_DP;
+package com.Array_String.DFS_BFS_UnionFind_DP;
 
 import java.util.*;
 
