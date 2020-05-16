@@ -17,6 +17,7 @@ public class _128_Longest_Consecutive_Sequence {
     private static int find(int i){
         if(parent[i]!=i) parent[i] = find(parent[i]);
         return parent[i];
+
     }
 
     private static void union(int x, int y){
