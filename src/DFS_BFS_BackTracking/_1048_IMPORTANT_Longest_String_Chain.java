@@ -1,4 +1,4 @@
-package DFS_BFS;
+package DFS_BFS_BackTracking;
 
 import java.util.*;
 

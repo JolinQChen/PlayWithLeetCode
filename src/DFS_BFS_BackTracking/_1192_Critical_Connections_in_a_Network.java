@@ -1,5 +1,4 @@
-package DFS_BFS;
-import sun.awt.image.ImageWatched;
+package DFS_BFS_BackTracking;
 
 import java.util.*;
 
