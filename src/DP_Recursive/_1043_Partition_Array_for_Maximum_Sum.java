@@ -1,4 +1,4 @@
-package DP;
+package DP_Recursive;
 
 /**
  * Given an integer array A, you partition the array into (contiguous) subarrays of length at most K.
