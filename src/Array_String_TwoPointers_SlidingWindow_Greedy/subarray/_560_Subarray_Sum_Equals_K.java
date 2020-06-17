@@ -1,4 +1,4 @@
-package Array_String.subarray;
+package Array_String_TwoPointers_SlidingWindow_Greedy.subarray;
 
 import java.util.HashMap;
 import java.util.Map;

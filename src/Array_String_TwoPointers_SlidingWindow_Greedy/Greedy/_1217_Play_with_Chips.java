@@ -1,4 +1,4 @@
-package Greedy;
+package Array_String_TwoPointers_SlidingWindow_Greedy.Greedy;
 
 /**
  * 数轴上放置了一些筹码，每个筹码的位置存在数组 chips 当中。

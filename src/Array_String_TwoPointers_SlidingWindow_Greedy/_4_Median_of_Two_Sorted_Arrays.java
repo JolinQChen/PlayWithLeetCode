@@ -1,4 +1,4 @@
-package Array_String;
+package Array_String_TwoPointers_SlidingWindow_Greedy;
 
 public class _4_Median_of_Two_Sorted_Arrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {

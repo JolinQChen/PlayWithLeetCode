@@ -1,4 +1,4 @@
-package Greedy;
+package Array_String_TwoPointers_SlidingWindow_Greedy.Greedy;
 
 import java.util.ArrayList;
 import java.util.Comparator;

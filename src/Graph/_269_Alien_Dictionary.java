@@ -23,7 +23,7 @@ import java.util.*;
 public class _269_Alien_Dictionary {
     public String alienOrder_1(String[] words) {
         //1. build a digraph with all possible chars
-        //2. topological sort
+        //2. topological Array_String_TwoPointers_SlidingWindow_Greedy.sort
         //3. if there is a cycle then return ""
         //4. otherwise return reverse - topologic order
         //instead - we can also build a reverse graph and then return topological order

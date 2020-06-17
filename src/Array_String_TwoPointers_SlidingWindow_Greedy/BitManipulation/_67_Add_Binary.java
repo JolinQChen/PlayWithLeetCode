@@ -1,4 +1,4 @@
-package bit_operation;
+package Array_String_TwoPointers_SlidingWindow_Greedy.BitManipulation;
 
 import java.math.BigInteger;
 

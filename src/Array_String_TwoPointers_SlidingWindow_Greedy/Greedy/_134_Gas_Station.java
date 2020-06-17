@@ -1,4 +1,4 @@
-package Greedy;
+package Array_String_TwoPointers_SlidingWindow_Greedy.Greedy;
 
 /**
  * There are N gas stations along a circular route, where the amount of gas at

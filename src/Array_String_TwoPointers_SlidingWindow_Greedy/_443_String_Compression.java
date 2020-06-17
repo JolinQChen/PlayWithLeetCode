@@ -1,4 +1,4 @@
-package Array_String;
+package Array_String_TwoPointers_SlidingWindow_Greedy;
 
 /**
  * Given an array of characters, compress it in-place.
