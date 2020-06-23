@@ -10,7 +10,6 @@ public class _945_Minimum_Increment_to_Make_Array_Unique  {
             if(A[i]<=A[i-1]){
                 res += A[i-1]-A[i]+1;
                 A[i]=A[i-1]+1;
-
             }
         }
         return res;
