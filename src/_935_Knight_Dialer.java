@@ -68,6 +68,5 @@ public class _935_Knight_Dialer {
     public static void main(String[] args){
         _935_Knight_Dialer test = new _935_Knight_Dialer();
         System.out.println(test.knightDialer(100));
-        //还是TLE，算了算了
     }
 }
