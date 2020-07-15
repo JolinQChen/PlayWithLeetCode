@@ -1,16 +1,22 @@
 package Design;
 import java.util.*;
+//import javafx.util.Pair;
 
-class Pair<V, U>{
-    public V key;
-    public U value;
-    public Pair(V k, U v){
-        this.key = k;
-        this.value = v;
-    }
-}
+
 
 class Bucket{
+    private class Pair<V, U>{
+        public V key;
+        public U value;
+        public Pair(V k, U v){
+            this.key = k;
+            this.value = v;
+        }
+
+        public V getKey() {
+            return null;
+        }
+    }
     public LinkedList<Pair<Integer, Integer>> bucket;
     public Bucket(){
         this.bucket = new LinkedList<Pair<Integer, Integer>>();
@@ -19,7 +25,7 @@ class Bucket{
     // 在bucket中查找key
     public int get(int search_key){
         for(Pair<Integer, Integer> pair:this.bucket){
-            if(pair.key == search_key) return pair.value;
+            if(pair.getKey() == search_key) return pair.value;
         }
         return -1;
     }
