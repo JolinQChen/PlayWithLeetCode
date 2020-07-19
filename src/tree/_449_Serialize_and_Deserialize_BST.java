@@ -6,11 +6,11 @@ import java.util.Queue;
 public class _449_Serialize_and_Deserialize_BST {
     /**
      * Definition for a binary tree node.
-     * public class TreeNode {
+     * public class _All.TreeNode {
      *     int val;
-     *     TreeNode left;
-     *     TreeNode right;
-     *     TreeNode(int x) { val = x; }
+     *     _All.TreeNode left;
+     *     _All.TreeNode right;
+     *     _All.TreeNode(int x) { val = x; }
      * }
      *
      * Serialization is the process of converting a data structure or object into a sequence of

@@ -7,11 +7,11 @@ import java.util.Queue;
  * You are given a perfect binary tree where all leaves are on the same level,
  * and every parent has two children. The binary tree has the following definition:
  *
- * struct Node {
+ * struct _All.Node {
  *   int val;
- *   Node *left;
- *   Node *right;
- *   Node *next;
+ *   _All.Node *left;
+ *   _All.Node *right;
+ *   _All.Node *next;
  * }
  * Populate each next pointer to point to its next right node. If there is no next right
  * node, the next pointer should be set to NULL.
@@ -20,20 +20,20 @@ import java.util.Queue;
  * */
 
 /*
-// Definition for a Node.
-class Node {
+// Definition for a _All.Node.
+class _All.Node {
     public int val;
-    public Node left;
-    public Node right;
-    public Node next;
+    public _All.Node left;
+    public _All.Node right;
+    public _All.Node next;
 
-    public Node() {}
+    public _All.Node() {}
 
-    public Node(int _val) {
+    public _All.Node(int _val) {
         val = _val;
     }
 
-    public Node(int _val, Node _left, Node _right, Node _next) {
+    public _All.Node(int _val, _All.Node _left, _All.Node _right, _All.Node _next) {
         val = _val;
         left = _left;
         right = _right;

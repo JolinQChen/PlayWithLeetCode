@@ -39,7 +39,7 @@ public class _108_Convert_Sorted_Array_to_Binary_Search_Tree {
      * 方法 helper(left, right) 使用数组 nums 中索引从 left 到 right 的元素创建 BST：
      * 如果 left > right，子树中不存在元素，返回空。
      * 找出中间元素：p = (left + right) / 2。
-     * 创建根节点：root = TreeNode(nums[p])。
+     * 创建根节点：root = _All.TreeNode(nums[p])。
      * 递归创建左子树 root.left = helper(left, p - 1) 和右子树 root.right = helper(p + 1, right)。
      * 返回 helper(0, len(nums) - 1)。
      * */

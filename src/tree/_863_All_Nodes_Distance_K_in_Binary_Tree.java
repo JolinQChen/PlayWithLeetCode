@@ -12,7 +12,7 @@ public class _863_All_Nodes_Distance_K_in_Binary_Tree {
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
         map = new HashMap<>();
         this.root = root;
-        //TreeNode last = new TreeNode();
+        //_All.TreeNode last = new _All.TreeNode();
         helper(null, target, K);
 
         return list;

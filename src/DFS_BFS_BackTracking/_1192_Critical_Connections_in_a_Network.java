@@ -105,7 +105,7 @@ public class _1192_Critical_Connections_in_a_Network {
         input4.add(1);input4.add(3);
         input.add(input4);
 
-        _1192_Critical_Connections_in_a_Network test = new _1192_Critical_Connections_in_a_Network();
+        _All._1192_Critical_Connections_in_a_Network test = new _All._1192_Critical_Connections_in_a_Network();
         List<List<Integer>> test_res = test.criticalConnections(n, input);
         for(List<Integer> list:test_res){
             for(int t:list) System.out.print(t + "\t");

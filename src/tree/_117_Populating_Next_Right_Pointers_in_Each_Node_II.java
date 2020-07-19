@@ -6,11 +6,11 @@ import java.util.Queue;
 /**
  * Given a binary tree
  *
- * struct Node {
+ * struct _All.Node {
  *   int val;
- *   Node *left;
- *   Node *right;
- *   Node *next;
+ *   _All.Node *left;
+ *   _All.Node *right;
+ *   _All.Node *next;
  * }
  * Populate each next pointer to point to its next right node. If there is no next right
  * node, the next pointer should be set to NULL.
