@@ -1,5 +1,5 @@
-package Citrix;
-import java.util.*;
+package _AAInterviews.Citrix;
+
 /**
  * 首先，让我们考虑一下如何查找字符串是否可以是分散回文。
  * 让我们考虑字符串仅包含小写字符的情况。

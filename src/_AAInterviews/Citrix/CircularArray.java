@@ -1,5 +1,5 @@
-package Citrix;
-import java.util.*;
+package _AAInterviews.Citrix;
+
 //应该不是最优解
 public class CircularArray {
 

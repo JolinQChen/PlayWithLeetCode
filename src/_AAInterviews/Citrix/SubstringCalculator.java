@@ -1,4 +1,4 @@
-package Citrix;
+package _AAInterviews.Citrix;
 import java.util.*;
 /**
  * return the number of distinct substring of string s

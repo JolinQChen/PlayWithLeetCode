@@ -1,5 +1,4 @@
-package Citrix;
-import java.util.*;
+package _AAInterviews.Citrix;
 
 /**
  * 贪心算法？？

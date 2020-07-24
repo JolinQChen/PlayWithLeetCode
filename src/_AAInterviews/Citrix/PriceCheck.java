@@ -1,4 +1,4 @@
-package Citrix;
+package _AAInterviews.Citrix;
 
 
 public class PriceCheck {

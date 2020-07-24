@@ -1,5 +1,5 @@
-package Citrix;
-import java.util.*;
+package _AAInterviews.Citrix;
+
 /**
  * Let N = a + a+1 + ... + b-1 + b = (a + b)*(b-a)/ 2 , now apply b = a + h
  * => N = a + a+1 + ... + a+h = (a + a+h) * (h+1) / 2

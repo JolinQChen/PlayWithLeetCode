@@ -1,5 +1,5 @@
-package Citrix;
-import java.util.*;
+package _AAInterviews.Citrix;
+
 /**
  * input "mokkori"
  * palindrome substring: m,o,k,r,i,kk,okko

@@ -1,4 +1,4 @@
-package Citrix;
+package _AAInterviews.Citrix;
 import java.util.*;
 /**
  * input [1,2,1,3,2]

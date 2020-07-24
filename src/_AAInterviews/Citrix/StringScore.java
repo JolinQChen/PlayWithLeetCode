@@ -1,4 +1,4 @@
-package Citrix;
+package _AAInterviews.Citrix;
 
 public class StringScore {
     public static int max(String s) {

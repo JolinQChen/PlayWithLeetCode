@@ -1,4 +1,4 @@
-package Citrix;
+package _AAInterviews.Citrix;
 import java.util.*;
 public class maze {
     private static int[][][] dist = new int[101][101][11];
