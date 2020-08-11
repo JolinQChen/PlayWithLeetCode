@@ -1,13 +1,8 @@
 package _AAInterviews.MS;
-
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-
-public class LowestCommonAncestorofaBinarySearchTree {
+import java.util.*;
+public class LowestCommonAncestorOfABinaryTree {
+    //不同之处在于这里是搜索二叉树
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-
         if(p.val>q.val) {
             TreeNode tmp = p;
             p = q;
