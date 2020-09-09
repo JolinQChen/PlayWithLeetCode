@@ -1,6 +1,6 @@
 package _AAInterviews.Wish;
 import java.util.*;
-public class _781_RabbitsInForest {
+public class RabbitsInForest {
     public int numRabbits(int[] answers) {
         Map<Integer, Integer> map = new HashMap<>();
         int res = 0;

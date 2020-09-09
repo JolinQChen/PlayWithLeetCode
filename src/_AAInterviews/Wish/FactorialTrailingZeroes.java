@@ -6,7 +6,7 @@ based on the count of five. One pair of (2,5) would lead to one zero. Another on
 This is called greedy approach.
  */
 
-public class _172_FactorialTrailingZeroes {
+public class FactorialTrailingZeroes {
 /**
  * Time complexity : O(n)O(n), Space complexity : O(1)O(1).
  * */

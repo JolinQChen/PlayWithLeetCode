@@ -6,7 +6,7 @@ package _AAInterviews.Wish;
  * Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
  *
  * */
-public class _300_LongestIncreasingSubsequence {
+public class LongestIncreasingSubsequence {
     public int lengthOfLIS(int[] nums) {
         // use dp
         if(nums.length<=1) return nums.length;

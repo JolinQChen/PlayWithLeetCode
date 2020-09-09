@@ -13,7 +13,7 @@ import java.util.Queue;
  * Fill each empty room with the distance to its nearest gate. If it is impossible to reach a gate, it
  * should be filled with INF.
  * */
-public class _286_WallsAndGates {
+public class WallsAndGates {
     private final int INF = 2147483647;
     private int[] dr = {0,0,-1,1};
     private int[] dc = {1,-1,0,0};

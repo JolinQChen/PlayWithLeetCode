@@ -1,6 +1,6 @@
 package _AAInterviews.Wish;
 
-public class _311_SparseMatrixMultiplication {
+public class SparseMatrixMultiplication {
     public int[][] multiply(int[][] A, int[][] B) {
         int R = A.length;
         int C = B[0].length;

@@ -7,7 +7,6 @@ class LRUCache {
         int val;
         DLNode next;
         DLNode prev;
-
     }
 
     private int capacity;

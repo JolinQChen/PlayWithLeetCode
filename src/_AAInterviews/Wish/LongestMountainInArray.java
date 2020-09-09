@@ -1,6 +1,6 @@
 package _AAInterviews.Wish;
 
-public class _845_LongestMountainInArray {
+public class LongestMountainInArray {
     public static int longestMountain(int[] A) {
         int longest = 0;
         int idx = 1;

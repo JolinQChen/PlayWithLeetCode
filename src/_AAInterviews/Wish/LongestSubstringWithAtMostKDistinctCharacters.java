@@ -9,7 +9,7 @@ package _AAInterviews.Wish;
  * sliding window
  * */
 import java.util.*;
-public class _340_LongestSubstringWithAtMostKDistinctCharacters {
+public class LongestSubstringWithAtMostKDistinctCharacters {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
         int len = s.length();
         if(len<=k) return len;

@@ -1,6 +1,6 @@
 package _AAInterviews.Wish;
 import java.util.*;
-public class _987_VerticalOrderTraversalOfABinaryTree {
+public class VerticalOrderTraversalOfABinaryTree {
     class TreeNode {
         int val;
         TreeNode left;

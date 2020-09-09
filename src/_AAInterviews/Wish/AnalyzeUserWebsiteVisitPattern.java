@@ -18,7 +18,7 @@ import java.util.*;
  *
  * Output: ["home","about","career"]
  * */
-public class _1152_AnalyzeUserWebsiteVisitPattern {
+public class AnalyzeUserWebsiteVisitPattern {
     class time_web {
 //        String username;
         int timestamp;
@@ -88,7 +88,7 @@ public class _1152_AnalyzeUserWebsiteVisitPattern {
         int[] timestamp = {1,2,3,4,5,6,7,8,9,10};
         String[] website = {"home","about","career","home","cart","maps","home","home","about","career"};
 
-        _1152_AnalyzeUserWebsiteVisitPattern test = new _1152_AnalyzeUserWebsiteVisitPattern();
+        AnalyzeUserWebsiteVisitPattern test = new AnalyzeUserWebsiteVisitPattern();
         List<String> res = test.mostVisitedPattern(username, timestamp, website);
         for(String s:res) System.out.println(s);
     }

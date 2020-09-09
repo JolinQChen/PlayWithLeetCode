@@ -4,7 +4,7 @@ package _AAInterviews.Wish;
  * compute the number of combinations that make up that amount. You may assume that you have infinite
  * number of each kind of coin.
  * */
-public class _518_CoinChange2 {
+public class CoinChange2 {
     public int change(int amount, int[] coins) {
         int[] DP = new int[amount+1];
         DP[0] = 1;

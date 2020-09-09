@@ -1,7 +1,7 @@
 package _AAInterviews.Wish;
 
 import java.util.*;
-public class _33_SearchInRotatedSortedArray {
+public class SearchInRotatedSortedArray {
     public static int search(int[] nums, int target){
         // first find the pivot and search in two parts
         // find the pivot
