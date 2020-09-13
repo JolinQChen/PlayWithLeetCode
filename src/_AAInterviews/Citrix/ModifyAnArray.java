@@ -2,7 +2,7 @@ package _AAInterviews.Citrix;
 import java.util.*;
 
 /**
- *
+ * 变成non-decreasing或non-increasing的代价（差值）
  *
  * */
 public class ModifyAnArray {
@@ -11,16 +11,27 @@ public class ModifyAnArray {
     }
 
     private static int costNonDecrease(int[] arr){
-        int sum = 0, dif = 0;
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        int n = arr.length;
-        for(int i=0; i<n; i++){
-            if(!pq.isEmpty() && pq.peek()>arr[i]){
-                dif = pq.poll() - arr[i];
-                sum += dif;
-                pq.add(arr[i]);
+//        int sum = 0, dif = 0;
+//        PriorityQueue<Integer> pq = new PriorityQueue<>();
+//        int n = arr.length;
+//        for(int i=0; i<n; i++){
+//            if(!pq.isEmpty() && pq.peek()>arr[i]){
+//                dif = pq.poll() - arr[i];
+//                sum += dif;
+//                pq.add(arr[i]);
+//            }
+//            pq.add(arr[i]);
+//        }
+//        return sum;
+        int sum = 0;
+        int pre = arr[0];
+        for(int i=1; i<arr.length; i++) {
+            if(arr[i]<pre) {
+                sum += (pre-arr[i]);
+                arr[i] = pre;
             }
-            pq.add(arr[i]);
+            pre = arr[i];
+
         }
         return sum;
     }
@@ -48,5 +59,10 @@ public class ModifyAnArray {
         }
 
         return sum;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,2};
+        System.out.println(minCost(arr));
     }
 }

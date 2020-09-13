@@ -2,7 +2,8 @@ package _AAInterviews.Citrix;
 import java.util.*;
 
 /**
- *
+ * a[i] and b[i] are enemies and cannot be kept in the same group
+ * 返回可以group的方式，一个group里面必须是连续的
  * */
 
 
@@ -20,12 +21,14 @@ public class AngryAnimals {
             ));
         }
         for (int i=0; i<a.length; i++){
+            //始终插入大的index对应的queue
             if(a[i]<b[i]){
                 e.get(b[i]).offer(a[i]);
             }
             else e.get(a[i]).offer(b[i]);
         }
-        for(int i:e.get(3)) System.out.println("i "+i);
+
+//        for(int i:e.get(3)) System.out.println("i "+i);
         long count = 0;
         Deque<Integer> queue = new LinkedList<>();
         for(int i=1; i<=n; i++){

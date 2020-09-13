@@ -45,6 +45,7 @@ public class _208_Implement_Trie_Prefix {
             return res!=null && res.isWord;
         }
 
+
         /** Returns if there is any word in the trie that starts with the given prefix. */
         public boolean startsWith(String prefix) {
             return find(prefix)!=null;
