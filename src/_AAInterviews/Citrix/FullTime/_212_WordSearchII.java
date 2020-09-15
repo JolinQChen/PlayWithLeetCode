@@ -1,4 +1,5 @@
 package _AAInterviews.Citrix.FullTime;
+import java.lang.reflect.Array;
 import java.util.*;
 public class _212_WordSearchII {
     List<String> res;
@@ -157,5 +158,17 @@ public class _212_WordSearchII {
             this.word = false;
             this.chars = new Trie[26];
         }
+    }
+
+    public static void main(String[] args) {
+        int[] c = {1,2,3,4};
+        String ss = "ASAS";
+        ss = ss.toLowerCase();
+        System.out.println(ss);
+        StringBuilder sb = new StringBuilder();
+        for(int i:c) sb.append(i);
+        int i = sb.charAt(sb.length()-1)-'0';
+        sb.delete(sb.length()-1,sb.length());
+        System.out.println(Integer.parseInt(sb.toString()));
     }
 }
