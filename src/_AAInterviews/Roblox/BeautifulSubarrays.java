@@ -43,6 +43,50 @@ public class BeautifulSubarrays {
         }
         return res;
     }
+
+    private static int m_odd_improved_1(int[] arr, int m){
+        int n = arr.length;
+        List<Integer> odd = new LinkedList<>();
+        odd.add(-1);
+        for(int i=0; i<n; i++){
+            if(arr[i]%2!=0) odd.add(i);
+        }
+        odd.add(n);
+        int len = odd.size();
+        if(len<=3) return 0;
+        int res = 0;
+        for(int i=1; i<len-2; i++){
+            res = res + (odd.get(i)-odd.get(i-1))*(odd.get(i+2)-odd.get(i+1));
+        }
+        return res;
+    }
+
+    private static int m_odd_improved_2(int[] a, int m){
+        int n=a.length;
+        int count = 0;
+        int prefix[] = new int[n];
+        int odd = 0;
+
+        // traverse in the array
+        for (int i = 0; i < n; i++)
+        {
+            prefix[odd]++;
+
+            // if array element is odd
+            if ((a[i] & 1) == 1)
+                odd++;
+
+            // when number of odd
+            // elements >= M
+            if (odd >= m)
+                count += prefix[odd - m];
+        }
+
+        return count;
+
+    }
+
+
     public static void main(String[] args) {
         int[] test = {2,2,5,6,9,2,11};
         System.out.println(countBeautifulSubarrays(test,2));
