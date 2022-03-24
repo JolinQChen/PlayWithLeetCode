@@ -96,12 +96,8 @@ public class _1048_IMPORTANT_Longest_String_Chain {
     相对以前的最长升序子序列，我们把升序这个条件换成是否为前身即可。
     */
     public int longestStrChain_dp(String[] words){
-        Arrays.sort(words, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return o1.length() - o2.length();
-            }
-        });
+        Arrays.sort(words, (o1, o2) -> o1.length() - o2.length());
+        Arrays.sort(words, (Comparator.comparingInt(String::length)));
         int[] dp = new int[words.length];
         int Max_dp = 0;
         for(int i=1; i<words.length; i++){
@@ -131,3 +127,9 @@ public class _1048_IMPORTANT_Longest_String_Chain {
 
 
 }
+
+
+/*
+* ["ksqvsyq","czvh","zczpzvdhx","zczpzvh","zczpzvhx","zcpzvh","zczvh","grukmj","ksqvsq","kssq","ksqsq","grukkmj","grukj","zczpzfvdhx"]
+*
+* */
