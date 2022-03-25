@@ -1,7 +1,6 @@
 package unionFind;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.
@@ -22,55 +21,53 @@ import java.util.Queue;
 public class _130_Surrounded_Regions {
     // BFS做法
     class Solution_1 {
-        private int[] dr = {0,0,1,-1};
-        private int[] dc = {1,-1,0,0};
         public void solve(char[][] board) {
-            int R = board.length;
-            if(R == 0) return;
-            int C = board[0].length;
+        //BFS
+        int[] dr = {0,0,1,-1};
+        int[] dc = {1,-1,0,0};
+        
+        int R = board.length;
+        int C = board[0].length;
+        boolean[][] visited = new boolean[R][C];
 
-            boolean[][] visited = new boolean[R][C];
-            Queue<int[]> queue = new LinkedList<>();
-            Queue<int[]> reserve = new LinkedList<>();
-            for(int i=0; i<R; i++) {
-                for(int j=0; j<C; j++) {
-
-                    if(board[i][j] == 'O' && visited[i][j] == false) {
-                        boolean flag = false;
-                        queue.add(new int[]{i,j});
-                        reserve.add(new int[]{i,j});
-                        visited[i][j] = true;
-                        while(!queue.isEmpty()) {
-                            int[] pos = queue.poll();
-                            if(pos[0]==0 || pos[0]==R-1 || pos[1]==0 || pos[1]==C-1) {
-                                flag = true;
-                            }
-                            for(int ii=0; ii<4; ii++){
-                                int cur_r = pos[0]+dr[ii];
-                                int cur_c = pos[1]+dc[ii];
-                                if(cur_r>=0 && cur_r<R && cur_c>=0 && cur_c<C && visited[cur_r][cur_c]==false && board[cur_r][cur_c]=='O') {
-                                    visited[cur_r][cur_c] = true;
-                                    queue.add(new int[]{cur_r, cur_c});
-                                    reserve.add(new int[]{cur_r, cur_c});
+        for(int r=0; r<R; r++) {
+            for(int c=0; c<C; c++) {
+                if(board[r][c] == 'O' && !visited[r][c]) {
+                    Queue<int[]> queue = new LinkedList<>();
+                    List<int[]> toBeTurned = new ArrayList<>();
+                    queue.add(new int[]{r,c});
+                    visited[r][c] = true;
+                    boolean isIsland = true;
+                    while(!queue.isEmpty()) {
+                        int[] pos = queue.poll();
+                        toBeTurned.add(pos);
+                        for(int i=0; i<4; i++) {
+                            if(pos[0]+dr[i]>=0 && 
+                                pos[0]+dr[i]<R && 
+                                pos[1]+dc[i]>=0 && 
+                                pos[1]+dc[i]<C) {
+                                if(board[pos[0]+dr[i]][pos[1]+dc[i]] == 'O' &&
+                                !visited[pos[0]+dr[i]][pos[1]+dc[i]]) {
+                                    queue.add(new int[]{pos[0]+dr[i], pos[1]+dc[i]});
+                                    visited[pos[0]+dr[i]][pos[1]+dc[i]] = true;
                                 }
+
+                            } else {
+                                // reached boarder
+                                isIsland = false;
                             }
-
                         }
-
-                        if(flag == true) {
-                            reserve.clear();
-
-                        }
-                        else{
-                            while(!reserve.isEmpty()){
-                                int[] pos = reserve.poll();
-                                board[pos[0]][pos[1]] = 'X';
-                            }
+                    }
+                    if(isIsland) {
+                        for(int[] pos:toBeTurned) {
+                            board[pos[0]][pos[1]] = 'X';
                         }
                     }
                 }
             }
         }
+
+    }
     }
 
     // Union Find标准做法

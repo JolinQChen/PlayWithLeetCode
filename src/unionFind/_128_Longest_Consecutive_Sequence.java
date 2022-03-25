@@ -34,7 +34,7 @@ public class _128_Longest_Consecutive_Sequence {
         }
         else {
             parent[xRoot] = yRoot;
-            rank[xRoot]++;
+            rank[yRoot]++;
             size[yRoot] += size[xRoot];
         }
     }
