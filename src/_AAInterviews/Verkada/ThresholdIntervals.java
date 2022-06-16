@@ -12,15 +12,16 @@ public class ThresholdIntervals {
             this.value = v;
         }
     }
-    public List<int[]> intervalsAboveThreshold(List<SampleNode> samples, double interval){
+    public List<int[]> intervalsAboveThreshold(List<SampleNode> samples, double threshold){
         List<int[]> res = new ArrayList<>();
+        Collections.sort(samples, (o1,o2)->(o1.timestamp-o2.timestamp));
         int[] curInterval = new int[]{-1,-1};
         int size = samples.size();
         int idx = 0;
         while(idx<size) {
-            if(samples.get(idx).value>=interval) {
+            if(samples.get(idx).value>=threshold) {
                 curInterval[0] = samples.get(idx).timestamp;
-                while(idx<size && samples.get(idx).value>=interval) idx++;
+                while(idx<size && samples.get(idx).value>=threshold) idx++;
                 curInterval[1] = samples.get(idx-1).timestamp;
                 res.add(new int[]{curInterval[0], curInterval[1]});
                 curInterval = new int[]{-1,-1};
