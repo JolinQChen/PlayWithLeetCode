@@ -1,6 +1,6 @@
 package _AAInterviews.Google;
 
-public class _794_Valid_Tic_Tac_Toe_State {
+public class _794_Valid_Tic_Tac_Toe_State_what_the_fuckkkkk {
     public boolean validTicTacToe(String[] board) {
         // get number
         int nx=0,no=0;
