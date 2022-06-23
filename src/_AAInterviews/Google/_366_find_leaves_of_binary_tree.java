@@ -16,7 +16,6 @@ public class _366_find_leaves_of_binary_tree {
             resList.get(dpMap.get(curNode)).add(curNode.val);
         }
         return resList;
-
     }
 
     private int sortLayer(TreeNode node) {

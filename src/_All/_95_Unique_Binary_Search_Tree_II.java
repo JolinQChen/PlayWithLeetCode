@@ -48,4 +48,53 @@ public class _95_Unique_Binary_Search_Tree_II {
 
 
     }
+
+
+    public List<TreeNode> generateTrees_2(int n) {
+        return generateTreesHelper(1,n);
+    }
+
+    private List<TreeNode> generateTreesHelper(int start, int end) {
+        List<TreeNode> res = new ArrayList<>();
+        for(int i=start; i<=end; i++) {
+            // each one as start
+            List<TreeNode> leftNodes = new ArrayList<>();
+            List<TreeNode> rightNodes = new ArrayList<>();
+            if(i-1>=start) leftNodes = generateTreesHelper(start, i-1);
+            if(i+1<=end) rightNodes = generateTreesHelper(i+1, end);
+
+            if(leftNodes.size()==0) {
+                if(rightNodes.size()==0) res.add(new TreeNode(i));
+                else {
+                    for(TreeNode right:rightNodes) {
+                        TreeNode root = new TreeNode(i);
+                        root.left = null;
+                        root.right = right;
+                        res.add(root);
+                    }
+                }
+            }
+            else if(rightNodes.size()==0) {
+                for(TreeNode left:leftNodes) {
+                    TreeNode root = new TreeNode(i);
+                    root.left = left;
+                    root.right = null;
+                    res.add(root);
+                }
+                return res;
+            }
+
+            else {
+                for (TreeNode right : rightNodes) {
+                    for (TreeNode left : leftNodes) {
+                        TreeNode root = new TreeNode(i);
+                        root.left = left;
+                        root.right = right;
+                        res.add(root);
+                    }
+                }
+            }
+        }
+        return res;
+    }
 }
