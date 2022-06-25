@@ -1,4 +1,4 @@
-package _All;
+package _AAInterviews.Google;
 
 import org.junit.Test;
 
