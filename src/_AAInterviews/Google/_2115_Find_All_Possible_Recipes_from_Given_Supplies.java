@@ -50,7 +50,10 @@ public class _2115_Find_All_Possible_Recipes_from_Given_Supplies {
     }
 
 
-    // use hash table
+    /**
+     * Use hash table + dfs
+     * */
+
     Map<String, List<String>> recipeMap;
     Map<String, Boolean> canCreateMap;
     public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
@@ -84,6 +87,7 @@ public class _2115_Find_All_Possible_Recipes_from_Given_Supplies {
         canCreateMap.put(toCreate, true);
         return true;
     }
+
 
     @Test
     public void test(){

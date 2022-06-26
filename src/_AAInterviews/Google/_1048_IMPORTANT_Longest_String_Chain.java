@@ -153,7 +153,7 @@ public class _1048_IMPORTANT_Longest_String_Chain {
             if(maxLen+1-len <= max) break;
             for(String curStr:curStringSet) {
                 max = Math.max(dfs(curStr), max);
-                System.out.println("cur str: "+curStr+": "+dfs(curStr));
+//                System.out.println("cur str: "+curStr+": "+dfs(curStr));
             }
         }
         return max;
