@@ -1,4 +1,4 @@
-package _AAInterviews.Google;
+package _AAInterviews.Google.OOD;
 import java.util.*;
 public class _2034_StockPrice {
     Map<Integer, Integer> timePrice;

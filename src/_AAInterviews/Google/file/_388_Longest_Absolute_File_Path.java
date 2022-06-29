@@ -1,4 +1,4 @@
-package _AAInterviews.Google;
+package _AAInterviews.Google.file;
 
 import org.junit.Test;
 
@@ -17,18 +17,13 @@ public class _388_Longest_Absolute_File_Path {
             while (j<len && layers[i].charAt(j)=='\t') {
                 curLayer++;
                 j++;
-
             }
-            System.out.println("j is:"+j);
             while(stack.size()>curLayer) {
                 totalLen -= stack.pop().length();
             }
             String toAdd = layers[i].substring(j);
             stack.push(toAdd+"/");
             totalLen = totalLen + toAdd.length()+1;
-            System.out.println("totalLen is: "+totalLen);
-            System.out.println("toAdd is: "+toAdd);
-            System.out.println(toAdd.split("\\.").length);
             if(toAdd.split("\\.").length>1) {
                 maxLen = Math.max(maxLen, totalLen-1);
             }

@@ -1,4 +1,4 @@
-package _AAInterviews.Google;
+package _AAInterviews.Google.interval;
 import java.util.*;
 
 public class _2158_amount_painted {
